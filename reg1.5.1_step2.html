@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 7]>
+    <meta http-equiv="refresh" content="0;URL=http://www.yuetianfu.com/upgrade.html"/>
+    <![endif]-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=1024, initial-scale=0.9"/>
+    <title>注册-钱100</title>
+    <meta name="keyword" content="钱100"/>
+    <meta name="description" content="钱100"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href="css/ivory1.5.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/style1.5.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.custombox.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="js/lib/jBox/Skins/Blue/jbox.css" media="all" rel="stylesheet" type="text/css"/>
+</head>
+<body class="inner-body">
+<!-- top info -->
+<div class="top_info">
+    <div class="g960">
+        <div class="row">
+            <div class="left">您好，欢迎来到钱100！&nbsp;&nbsp;<a href="">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""
+                                                                                                  class="underline red">免费注册</a>
+            </div>
+            <div class="right tel">全国服务热线：</div>
+        </div>
+    </div>
+</div>
+
+<!-- nav -->
+<div class="g960 top_nav">
+    <div class="row space-htop clearfix">
+        <a class="left logo" href="/">钱100</a>
+
+        <div class="right nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li class="active"><a href="">我要理财</a></li>
+                <li><a href="">我要借款</a></li>
+                <li><a href="">我的账户</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">安全保障</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!-- banner -->
+<div class="banner inner">
+    <div class="g960">
+        <div class="row"><img src="images/banner_960_150.png" alt=""></div>
+    </div>
+</div>
+
+
+<!-- content -->
+<div class="g960 space-top bg-white">
+    <div class="row box mb-30">
+        <div class="row">
+            <div class="p-20">
+                <h3 class="fs-18"><strong>会员注册</strong></h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row forgotPwd_input fs-14">
+            <form class="regForm">
+                <div><span>短信验证码：</span><input class="verify" type="text" name="verify" id="mobile" datatype="n4-4"
+                                               nullmsg="请输入短信验证码" errormsg="请输入正确的4位短信验证码" placeholder="验证码"/>
+                    <button id="CallSmsCode" mstype="5" type="button" class="yellow"
+                            style="letter-spacing:0px;margin-left:6px;font-weight:normal;margin-top: 5px;*margin-top: -18px;height: 44px;"
+                            title="点击获取短信验证码">获取短信验证码
+                    </button>
+                </div>
+                <div id="lblSmsCode" class="lblSmsCode mt-20" style="display: none;"><span
+                        class="left">验证码：</span><input id="txtsmsCode" type="text" class="verify left"
+                                                       datatype="*" nullmsg="请输入验证码" placeholder="验证码"/>
+                    <img id="forgotVerifycode" src="https://www.qian100.com/Frontend/Index/member_vcode" width="140"
+                         style="margin-left:6px;margin-top:1px;float: left;cursor: pointer;" title="点击更换验证码"></div>
+                <div class="mt-20"><span>新密码：</span><input type="password" name="pwd" datatype="*6-16" nullmsg="请输入新密码"
+                                                           errormsg="请输入6至16位新密码" placeholder="新密码"/></div>
+
+                <div class="mt-20">
+                    <span>确认密码：</span><input type="password" name="confirmpwd" datatype="*" recheck="pwd"
+                                             nullmsg="请输入确认密码" errormsg="确认密码不一致" placeholder="确认密码"/>
+                </div>
+                <div class="mt-5">
+                    <span></span>
+                    <a href="javascript:;" class="blue recommend"><i id="triangle-right"></i>推荐人</a>
+                </div>
+                <div class="recommend_area">
+                    <span></span>
+                    <input type="radio" class="radios ml-10" name="recommendType" checked/>钱一百用户 <input type="radio"
+                                                                                                        class="radios"
+                                                                                                        name="recommendType"/>运营商成员
+
+                <p><span></span><input type="text" datatype="*" nullmsg="请输入内容"/></p>
+                </div>
+                <div><span></span><input id="cbxAgree" type="checkbox" class="checkbox" checked="checked">我已阅读并同意<a
+                        href="/Announce/about/id/55/cateid/1298.html" class="blue ml-5" target="_blank">服务条款</a></div>
+                <div><span></span>
+                    <input type="hidden" id="sendtype" name="sendtype" value="1"/>
+                    <button class="ml-10 forgotForm_btn">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+<div class="reg_ok pop_window">
+    <div class="pop_window_title clearfix">
+        <span class="pop_window_title_text">提示</span>
+        <span class="close_pop_window"></span>
+    </div>
+    <div class="reg_ok_window_body">
+           <p class="text-center fs-18 gray6">注册完成</p>
+        <hr/>
+        <p class="gray3">您从哪里知道我们</p>
+        <div>
+            <span><label><input type="checkbox" name="whereknow" value="1"/>地铁广告</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="2"/>在线广告</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="3"/>有奖活动</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="4"/>微信朋友圈</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="5"/>搜索引擎</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="6"/>媒体新闻</label></span>
+            <span><label><input type="checkbox" name="whereknow" value="7"/>朋友</label></span>
+        </div>
+        <button class="mt-20" disabled>完成</button>
+
+    </div>
+</div>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.custombox.js"></script>
+<script src="js/lib/jBox/jquery.jBox-2.3.min.js"></script>
+<script src="js/validform.js"></script>
+<script src="js/utils.js"></script>
+<script>
+    $(function () {
+        $('.recommend').click(function () {
+            var $i = $(this).children('i');
+            if ($i.attr('id') == 'triangle-right') {
+                $i.attr('id','triangle-down');
+                $('.recommend_area').show();
+            }else{
+                $i.attr('id','triangle-right');
+                $('.recommend_area').hide();
+            }
+        })
+        $('.regForm').Validform({
+            ignoreHidden: true,
+            datatype: Customer.validform.datatype,
+            tiptype: function (msg, o) {
+                $(o.obj[0]).parent().next('.verify_error').remove();
+                if (o.type == 3) {
+                    $(o.obj[0]).parent().after('<div class="verify_error" style="margin-left:127px;height: 30px;color:#e3311b">' + msg + '</div>')
+                }
+            },
+            beforeSubmit: function () {
+                $.post('data.php',$('.forgotForm').serializeArray(), function (res) {
+                    if(res.status){
+                        $.fn.custombox({
+                            url: '.reg_ok',
+                            eClose: '.close_pop_window',
+                            overlaySpeed: 100,
+                            overlayOpacity: 0.5,
+                            width: 360,
+                            complete: function () {
+                                $('#custombox-modal .reg_ok_window_body button').removeAttr('disabled').click(function () {
+                                    var val = [];
+
+                                    $('#custombox-modal .reg_ok_window_body input:checked').each(function () {
+                                        console.log($(this).val());
+                                        val.push($(this).val());
+                                    })
+                                    if(!val.length){
+                                        alert('请选择后提交');
+                                    }
+                                    $.post('data.php',{data:val}, function (res) {
+                                        if(res.status){
+                                            $.jBox.confirm('现在就去完善资料？','提示', function (v) {
+                                                if(v == 'yes'){
+
+                                                }else{
+
+                                                }
+                                            });
+                                        }
+                                    });
+                                })
+                            }
+                        });
+                    }else{
+                        $.jBox.tip(res.info,'info');
+                    }
+                });
+                return false;
+            }
+        });
+
+        $('#CallSmsCode').click(function () {
+            ajaxGetPhoneCode($(this));
+        });
+
+        //更换验证码
+        $('#forgotVerifycode').click(function () {
+            $(this).attr('src', 'https://www.qian100.com/Frontend/Index/member_vcode/' + Math.random());
+        });
+
+        function countdown(i) {
+            if (i <= 0) {
+                clearTimeout(timer);
+                $("#CallSmsCode").prop('disabled', false);
+                $("#CallSmsCode").html('获取短信验证码');
+            } else {
+                $("#CallSmsCode").prop('disabled', true);
+                timer = setTimeout(function () {
+                    i--;
+                    $("#CallSmsCode").html('还需要等待<b>' + i + '秒</b>才能重新获取短信验证码');
+                    countdown(i);
+                }, 1000);
+            }
+
+        }
+
+        function ajaxGetPhoneCode(_t) {
+            if (!$("#lblSmsCode").is(":hidden")) { //存在验证码
+                console.log(2);
+                if ($("#txtsmsCode").val().length == 0) {
+                    $.jBox.tip('请输入图形验证码', "info", {focusId: 'txtsmsCode'});
+                    return false;
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/Index/checkfourcode.html",
+                    data: {txtsmsCode: $.trim($("#txtsmsCode").val())},
+                    success: function (result) {
+                        if (result.status == 0) {	//图形验证码错误
+                            $.jBox.tip('图形验证码错误', "info", {focusId: 'txtsmsCode'});
+                            return false;
+                        }
+                    }
+                });
+
+            }
+            $.ajax({
+                type: "POST",
+                url: "/data.php",
+                data: {simplemesstype: _t.attr('mstype'), mobileNumber: $("#mobile").val(), devId: '11111'},
+                dataType: "json",
+                success: function (result) {
+                    var tick = result.timetable, timer;
+                    if (result.status > 0) {
+                        countdown(tick);
+                        $.jBox.tip((result.message || result.msg), result.result ? "success" : "info");
+                        $.post("/Frontend/MobileMessage/iswhetherMulSend",
+                                {
+                                    type: $('#sendtype').val(),
+                                    rn: Math.random()
+                                }, function (json) {
+                                    if (!json.Result) {
+                                        $('#lblSmsCode').hide();
+                                    } else {
+                                        $('#lblSmsCode').show();
+                                    }
+                                }, "json");
+                        //$('#reghform').find('img#regvalidatecode').click();
+                    } else {
+                        $.jBox.tip((result.message || result.msg));
+                    }
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>

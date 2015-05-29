@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 7]>
+    <meta http-equiv="refresh" content="0;URL=http://www.yuetianfu.com/upgrade.html"/>
+    <![endif]-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=1024, initial-scale=0.9"/>
+    <title>注册-钱100</title>
+    <meta name="keyword" content="钱100"/>
+    <meta name="description" content="钱100"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href="css/ivory1.5.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/style1.5.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.custombox.css" media="all" rel="stylesheet" type="text/css"/>
+</head>
+<body class="inner-body">
+<!-- top info -->
+<div class="top_info">
+    <div class="g960">
+        <div class="row">
+            <div class="left">您好，欢迎来到钱100！&nbsp;&nbsp;<a href="">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""
+                                                                                                  class="underline red">免费注册</a>
+            </div>
+            <div class="right tel">全国服务热线：</div>
+        </div>
+    </div>
+</div>
+
+<!-- nav -->
+<div class="g960 top_nav">
+    <div class="row space-htop clearfix">
+        <a class="left logo" href="/">钱100</a>
+
+        <div class="right nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li class="active"><a href="">我要理财</a></li>
+                <li><a href="">我要借款</a></li>
+                <li><a href="">我的账户</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">安全保障</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!-- banner -->
+<div class="banner inner">
+    <div class="g960">
+        <div class="row"><img src="images/banner_960_150.png" alt=""></div>
+    </div>
+</div>
+
+
+<!-- content -->
+<div class="g960 space-top bg-white">
+    <div class="row box mb-30">
+        <div class="row">
+            <div class="p-20">
+                <h3 class="fs-18"><strong>会员注册</strong></h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row  forgotPwd_input fs-14">
+            <form class="forgotForm">
+                <div><span>手机：</span><input type="tel" name="pwd" datatype="m" nullmsg="请输入手机号" errormsg="请输入正确的手机号" placeholder="请输入手机号"/></div>
+                <div><span></span>
+                    <button class="forgotForm_btn">发送验证码</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.custombox.js"></script>
+<script src="js/validform.js"></script>
+<script src="js/utils.js"></script>
+<script>
+    $(function () {
+        $('.forgotForm').Validform({
+            datatype:Customer.validform.datatype,
+            tiptype: function (msg,o) {
+                $(o.obj[0]).parent().next('.verify_error').remove();
+                if(o.type == 3){
+                    $(o.obj[0]).parent().after('<div class="verify_error" style="margin-left:127px;height: 30px;color:#e3311b">'+msg+'</div>')
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>
